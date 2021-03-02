@@ -1,0 +1,30 @@
+{
+  "name": "rekognition-sample-detectmoderationlabels",
+  "version": "1.0.0",
+  "description": "Determine if an image is inappropriate.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katsube/rekognition-sample-detectmoderationlabels.git"
+  },
+  "keywords": [
+    "Amazon",
+    "AWS",
+    "rekognition",
+    "AI",
+    "Image"
+  ],
+  "author": "M.Katsube",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katsube/rekognition-sample-detectmoderationlabels/issues"
+  },
+  "homepage": "https://github.com/katsube/rekognition-sample-detectmoderationlabels#readme",
+  "dependencies": {
+    "aws-sdk": "^2.854.0",
+    "dotenv": "^8.2.0"
+  }
+}
