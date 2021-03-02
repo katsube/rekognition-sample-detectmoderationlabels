@@ -50,5 +50,6 @@ client.detectModerationLabels(params, (err, response) =>{
   }
   else {
     console.log(response)
+    fs.writeFileSync(FILE.json, JSON.stringify(response, null, 2))
   }
 })

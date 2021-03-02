@@ -1,0 +1,15 @@
+{
+  "ModerationLabels": [
+    {
+      "Confidence": 99.85330200195312,
+      "Name": "Explicit Nudity",
+      "ParentName": ""
+    },
+    {
+      "Confidence": 99.85330200195312,
+      "Name": "Illustrated Explicit Nudity",
+      "ParentName": "Explicit Nudity"
+    }
+  ],
+  "ModerationModelVersion": "4.0"
+}
