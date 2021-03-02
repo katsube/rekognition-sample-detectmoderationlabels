@@ -1,4 +1,8 @@
 node_modules/
+image/*.jpg
+image/*.jpeg
+image/*.png
+image/*.gif
 
 # 【重要】実際に利用する場合は .env を登録しないこと
 .env

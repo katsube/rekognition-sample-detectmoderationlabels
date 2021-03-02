@@ -3,6 +3,18 @@
  *   画像の内容にラベルを付ける
  *
  */
+
+//-----------------------------------------------
+// 定数
+//-----------------------------------------------
+// ファイルリスト
+const FILES = [
+  {origin:'image/sample1.png', json:'image/sample1.json'}
+]
+
+// 解析するファイル
+const FILE = FILES[0]
+
 //-----------------------------------------------
 // モジュール
 //-----------------------------------------------
@@ -26,13 +38,13 @@ AWS.config.update({
 const client = new AWS.Rekognition();
 const params = {
   Image: {
-    Bytes: getFile(FILE.origin)
+    Bytes: fs.readFileSync(FILE.origin)
   },
-  MaxLabels: 10
+  MinConfidence: 60
 }
 
 // Rekognitionで解析
-client.detectLabels(params, (err, response) =>{
+client.detectModerationLabels(params, (err, response) =>{
   if (err) {
     console.log(err, err.stack)
   }
